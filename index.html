@@ -1,18 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Compuage India</title>
-  </head>
-  <body style="text-align: center">
-    <img
-      src="https://raw.githubusercontent.com/technoweirds/camoupage.creative5/main/Acronis%20announcement.jpg"
-      usemap="#image-map"
-    />
-
-    <map name="image-map">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(function(e) {
+                $('img[usemap]').rwdImageMaps();
+            });
+        </script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            section{
+                position: absolute;
+               display: flex;
+               justify-content: center;
+               height: 100%;
+               width: 100%;
+            }
+            @media screen and (max-width: 600px), (max-width: 900px) {
+                section{
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+                img{
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <img src="https://raw.githubusercontent.com/technoweirds/camoupage.creative5/main/Acronis%20announcement.jpg" usemap="#image-map" alt="COMPUGE INFOCOM LTD">    <map name="image-map">
       <area
         target="_blank"
         alt="Compuage India"
@@ -54,5 +82,7 @@
         shape="rect"
       />
     </map>
-  </body>
+
+        </section>
+    </body>
 </html>
